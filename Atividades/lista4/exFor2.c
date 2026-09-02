@@ -1,16 +1,13 @@
 #include <stdio.h>
 #include<stdlib.h>
 
-main(){
+int main(){
 	
-	int maior, menor, cod, nV, nAtv, i, veiculos, med, medVeiculos, totalVeiculos, totalCidades = 0, codMaior, codMenor;
-	
-	maior = 0;
-	menor = nAtv;
+	int maior = 0, menor = 99999, cod, nV = 0, nAtv, i, veiculos, medVeiculos, medAcidentes, totalAcidentes = 0, totalCidades = 0, codMaior = 0, codMenor = 0;
 	
 
-	for(i=0;i<=3;i++){
-		printf("\n Digite o codigo da cidade");
+	for(i=0;i<3;i++){
+		printf("\n Digite o codigo da cidade: ");
 		scanf("%d%*c",&cod);
 		
 		printf("\n Digite o numero de veiculos de passeio: ");
@@ -31,27 +28,23 @@ main(){
 		
 		if(veiculos < 2000){
 			totalCidades++;
-			totalVeiculos = totalVeiculos + veiculos;
+			totalAcidentes = totalAcidentes + nAtv;
 		}
 		
 		nV = nV + veiculos;
 		
 	}
 	
-	printf("%d", i);
-	printf("%d", totalCidades);
+	medVeiculos = nV / i;
 	
-	med = nV / i;
+	medAcidentes = totalAcidentes / totalCidades;
 	
-	medVeiculos = totalVeiculos / totalCidades;
-	
-	
-	printf("\n Media de veiculos: %d", med); 
+	printf("\n Media de veiculos: %d", medVeiculos); 
 	printf("\n Maior Numero de acidentes: %d", maior);
 	printf(". E o codigo desta cidade é: %d", codMaior);
 	printf("\n Menor Numero de acidentes: %d", menor);
 	printf(". E o codigo desta cidade é: %d", codMenor);
-	printf("\n Media de acidentes nas cidade de veiculos menos 2000: %d", medVeiculos);
+	printf("\n Media de acidentes nas cidade de veiculos com menos de dois mil veiculos: %d", medAcidentes);
 	
 	
 	

@@ -1,25 +1,23 @@
-#include <stdio.h>
-#include <locale.h>
+#include<stdio.h>
 
-/*faça um programa que receba o salário de um funcionário, calcule e mostre:
+/*faï¿½a um programa que receba o salï¿½rio de um funcionï¿½rio, calcule e mostre:
 -O salario atual,
 -O valor do aumento 
 -O novo salario, sabendo-se que este sofreu um aumento de 25%
 */
 
 int main(){
-    setlocale(LC_ALL, "Portuguese");
     
     float salario, aumento, novoSalario;
     
-    printf("digite seu salário\n");
+    printf("digite seu salï¿½rio\n");
     scanf("%f%*c", &salario);
     
-    aumento = salario * 0.25;
+    aumento = salario * 0.26;
     novoSalario = salario + aumento;
     
     printf("\n O aumento foi de: %.2f\n", aumento);
-    printf("\n Então o novo salário é: %.2f\n", novoSalario);
+    printf("\n Entï¿½o o novo salï¿½rio ï¿½: %.2f\n", novoSalario);
     
     system("pause");
     return 0;
