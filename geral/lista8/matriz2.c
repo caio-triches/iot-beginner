@@ -4,7 +4,7 @@
 int main(){
 	char nomeL[8][20], nomesP[4][20];
 	float precos[8][4];
-	int i, j, z, g, a, n;
+	int i, j, z, g, a, n;	
 	
 	for(i=0;i<8;i++){
 		printf("Digite o nome de uma loja: ");
