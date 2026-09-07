@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "C:\Users\caio_b_machado.EDU_FIESC\Documents\iot-beginner\Atividades\rotina2.h"
+#include "rotina2.h"
 
 int main(){
 	int num1, num2, soma;
