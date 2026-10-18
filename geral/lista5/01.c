@@ -33,6 +33,8 @@ int main(){
     perM = (fatalidadesM * 100) / nascimentos;
     perF = (fatalidadesF * 100) / nascimentos;
 
+
+
     printf("\nPorcentagem de criancas do sexo masculino mortas: %.1f%%", perM);
     printf("\nPorcentagem de criancas do sexo feminino mortas: %.1f%%", perF);
     printf("\nPorcentagem de criancas que viveram 24 meses ou menos no periodo: %.1f%%", per24);
